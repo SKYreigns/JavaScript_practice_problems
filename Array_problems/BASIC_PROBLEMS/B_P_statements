@@ -1,0 +1,41 @@
+            <!-- BASIC QUESTIONS -->
+
+<1> How do you declare an empty array in JavaScript?
+
+<2> How do you create an array with initial values in JavaScript? Give an example.
+
+<3> How do you access the first element of an array named myArray?
+
+<4> How do you access the last element of an array named myArray? (Assume you don't know the length beforehand).
+
+<5> What is the index of the first element in a JavaScript array?
+
+<6> How do you determine the number of elements in an array named myArray?
+
+<7> How do you add a new element to the end of an array named myArray?
+
+<8> How do you remove the last element from an array named myArray?
+
+<9> How do you add a new element to the beginning of an array named myArray?
+
+<10> How do you remove the first element from an array named myArray?
+
+<11> How do you iterate over each element in an array named myArray using a for loop?
+
+<12> How do you iterate over each element in an array named myArray using a for...of loop?
+
+<13> What is the purpose of the push() method for arrays?
+
+<14> What is the purpose of the pop() method for arrays?
+
+<15> What is the purpose of the shift() method for arrays?
+
+<16> What is the purpose of the unshift() method for arrays?
+
+<17> How do you find the index of a specific element (e.g., the string "apple") in an array named fruits?
+
+<18> How do you check if an array named numbers includes the value 5?
+
+<19> How do you create a new array that contains a portion of an existing array (e.g., elements from index 1 to 3 of originalArray)?
+
+<20> How do you combine two arrays, array1 and array2, into a new array?
