@@ -1,0 +1,56 @@
+<!-- <4> How do you access the last element of an array named myArray? (Assume you don't know the length beforehand). -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acess Last Element</title>
+  </head>
+
+  <style>
+    h1{
+        color: crimson;
+        text-decoration: underline;
+        text-align: center;
+    }
+    p{
+        color:#4b19ff;
+    }
+
+    h5{
+        color: white;
+        background-color: #212121;
+        text-align: center;
+        padding: 10px;
+    }
+
+</style>
+
+  <body>
+    <h1>Acessing The Last Element Of myArray.</h1>
+
+    <p>
+      For accessing the last element of myArray, we we don't know the exact
+      lenght of array.
+    </p>
+    <p>We can achieve that by doing this.</p>
+
+    <h5>
+        <BR>let myArray = ["", "s","o","m","e","t","h","i","n","g"];</BR>
+      console.log(myArray[myArray.length - 1]);
+    </h5>
+    <p>
+      "myArray.lenght": gives the total lenght of the array. So,to get the last
+      one we need to subtract 1 from the total lenght . Counting starts from
+      index 0 and goes to 'n' so the length will be "n+1".{counting =>> 0 = 1 ;
+      1-n = n => total counting = n+1}
+    </p>
+
+    <script>
+
+      let myArray = ["", "s","o","m","e","t","h","i","n","g"];
+      console.log(myArray[myArray.length - 1]);
+    </script>
+  </body>
+</html>
