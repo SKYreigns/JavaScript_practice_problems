@@ -42,12 +42,10 @@
         <h1>Iterating Each Element Using fOR Loop.</h1>
 
         <p>using "FOR" loop we can easily iterate over each element of the array. <br />
-        We can do in two ways by using "FOR" and "FOR...OF" loop. <br />
         Here's how we can do it.
         </p>
 
         <h5>
-            <p class="highlight">METHOD-1</p>
             let myArray = ["N","A","M","E"]
             for (let i = 0 ; i < myArray.lenght; i++){<br />
                 console.log(myArray[i]);
@@ -56,15 +54,6 @@
 
         <p class="highlight">INSIGHT:</p> <p>Here in our array we let that our indexing is startting from 0, i.e. "i = 0"  . For index less than the total length of the array do console.log for (i) and when it's done do 1+ in current "i"(i=index). So, in this way the array will keep on iterating until the value of "i" is less than the length of the array. </p>
 
-        <h5>
-            <p class="highlight">METHOD-2</p>
-            let myArray = ["N","A","M","E"];<br />
-            for (let char of myArray);
-            console.log(char);
-        </h5>
-
-        <p class="hightlight">INSIGHT:</p>
-        <p>What's happening here is , we are defining value every index as "char" of myArray. The 'FOR' then will try to iterate all the char. and console.log it one by one.</p>
 
         <script>
 
@@ -72,11 +61,6 @@
             for (let i = 0; i < myArray.length; i++) {
               const element = myArray[i];
               console.log(element);
-            }
-
-            let myArray2 = ["N","A","M","E"];
-            for(let char of myArray2){
-              console.log(char);
             }
             
         </script>
