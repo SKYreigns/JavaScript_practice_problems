@@ -18,6 +18,7 @@
   <script>
 
     function getFactorial() {
+        // getting all the elements.
       let problem = parseInt(document.getElementById('text_field').value);
       let showProblem = document.getElementById('output_problem');
       let showResult = document.getElementById('result');
@@ -25,6 +26,8 @@
       let factorial = 1; // Initialize factorial to 1
 
       showProblem.textContent = `to find factorial of ${problem}!`;
+
+    //   Factorial logic
 
       if (isNaN(problem) || problem < 0) {
         showResult.textContent = "Please enter a non-negative integer.";
