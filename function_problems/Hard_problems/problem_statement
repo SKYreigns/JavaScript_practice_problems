@@ -1,0 +1,21 @@
+ Hard (Complex Function Behavior & Functional Programming)
+
+<1> Memoization: Implement a function that caches results to optimize performance.
+
+<2> Implement a Custom map() Method: Create a function that mimics JavaScript’s native map() method.
+
+<3> Lazily Evaluate a Function: Write a function that takes another function and executes it only when called.
+
+<4> Write a Custom bind() Function: Implement a function that replicates JavaScript’s Function.prototype.bind().
+
+<5> Flatten a Nested Array: Write a function to convert a deeply nested array into a flat array.
+
+<6> Implement a Pub/Sub Pattern: Create a Publish-Subscribe (Observer) pattern in JavaScript.
+
+<7> Detect Circular References in an Object: Implement a function that checks if an object has circular references.
+
+<8> Create a Custom Event Emitter: Implement an event emitter with on(), emit(), and off() methods.
+
+<9> LRU Cache Implementation: Implement an LRU (Least Recently Used) cache using JavaScript.
+
+<10> Write a JavaScript Promise from Scratch: Implement a basic version of JavaScript’s Promise constructor.
