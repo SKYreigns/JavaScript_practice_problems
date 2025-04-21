@@ -1,0 +1,46 @@
+<!-- <10> How do you remove the first element from an array named myArray? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove An Element From The Beginning Of Array</title>
+  </head>
+
+  <style>
+    h1 {
+      color: crimson;
+      text-decoration: underline;
+      text-align: center;
+    }
+    p {
+      color: #4b19ff;
+    }
+
+    h5 {
+      color: white;
+      background-color: #212121;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>Removing An Element From The Beginning Of Array</h1>
+
+    <p>To Remove only one element from an array we can use the propert "SHIFT". <br />
+    What "SHIFT()" does is it removes the very first element of the array , i.e. an element with index 0.
+    </p>
+    <p>Here's how we can do that.</p>
+
+    <h5>let myArray = ["first", "second"];<br />
+        myArray.shift();
+    </h5>
+
+    <script>
+        let myArray = ["first","second"];
+        myArray.shift();
+        console.log(myArray);
+    </script>
+  </body>
+</html>
