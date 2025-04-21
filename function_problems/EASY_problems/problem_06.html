@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome checker</title>
+</head>
+<body>
+    <h1>Check Palindrome Texts</h1>
+    <label for="text" style="text-transform: uppercase;"> place your text here :-</label>
+    <input type="text" id="input_field" style="width: 300px; height: 200px; border-radius: 5px;">
+    <div id="clean"></div>
+    <div id="outcome"></div>
+    <button onclick="checkPalindrome()">check text </button>
+
+
+    <script>
+        
+        function checkPalindrome() {
+            let target_text = document.getElementById('input_field').value;
+            let lower_text = target_text.toLowerCase();
+            let clean_outcome = document.getElementById('clean');
+            let result = document.getElementById('outcome');
+
+            let cleanTexts = lower_text.replace(/[^a-zA-Z]/g, '');
+            let cleanReversedTexts = cleanTexts.split('').reverse().join('');
+            clean_outcome.textContent = `clean lower case input text = ${cleanReversedTexts}`;
+
+
+                    if (cleanTexts === cleanReversedTexts) {
+                        result.textContent = `the string is palandrome`
+                        
+                    } else {
+                        result.textContent = `the string is not a palandrome`
+                        
+                    }
+                
+
+        }
+    </script>
+</body>
+</html>
