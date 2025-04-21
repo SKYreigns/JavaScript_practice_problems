@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>factorial calculator</title>
+</head>
+
+<body>
+  <h1 style="text-transform: capitalize;">Claculate factorials for any number</h1>
+  <label for="number">Write the number whose factorial you want to find out => </label>
+  <input type="number" id="text_field">
+  <div id="output_problem">question =></div>
+  <div id="result">answer =></div>
+  <button id="calculate" onclick="getFactorial()">GET FACTORIAL</button>
+
+  <script>
+
+    function getFactorial() {
+      let problem = parseInt(document.getElementById('text_field').value);
+      let showProblem = document.getElementById('output_problem');
+      let showResult = document.getElementById('result');
+
+      let factorial = 1; // Initialize factorial to 1
+
+      showProblem.textContent = `to find factorial of ${problem}!`;
+
+      if (isNaN(problem) || problem < 0) {
+        showResult.textContent = "Please enter a non-negative integer.";
+        return; // Exit the function if input is invalid
+      } else if (problem === 0) {
+        showResult.textContent = `the factorial of ${problem} = 1`;
+        return; // Factorial of 0 is 1W
+      } else {
+        for (let i = 1; i <= problem; i++) {
+          factorial = factorial * i; // Multiply the current factorial by i
+        }
+        showResult.textContent = `the factorial of ${problem} = ${factorial}`;
+      }
+    }
+  </script>
+</body>
+
+</html>
