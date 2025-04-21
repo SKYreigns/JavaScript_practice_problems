@@ -1,0 +1,39 @@
+🔹 Medium (Advanced Function Usage & Closures)
+
+<1> Find Duplicates in an Array: Write a function that returns duplicate values in an array.
+
+<2> Remove Falsy Values: Implement a function that removes false, null, 0, "", undefined, and NaN from an array.
+
+<3> Debounce Function: Create a function that delays execution until a certain time has passed without being called again.
+
+<4> Throttle Function: Implement a throttle function that ensures a function executes at most once every specified interval.
+
+<5> Fibonacci Sequence: Write a function that generates the first N numbers in the Fibonacci sequence.
+
+<6> Find the Longest Word in a String: Given a sentence, return the longest word.
+
+<7> Deep Clone an Object: Implement a function that deeply clones an object without references.
+
+<8> Find Intersection of Two Arrays: Write a function that finds common elements between two arrays.
+
+<9> Implement Currying: Create a function that converts a normal function into a curried function.
+
+<10> Function Composition: Implement function composition where multiple functions execute sequentially with the output of one being the input of the next.
+
+
+Intermediate Level:
+
+<11>Factorial Calculation:
+Write a function factorial(n) that takes a non-negative integer n as an argument and returns its factorial.
+
+<12>Sum of Array Elements:
+Write a function sumArray(arr) that takes an array of numbers as an argument and returns the sum of all elements in the array.
+
+<13>Find the Longest Word:
+Write a function findLongestWord(str) that takes a string as an argument and returns the longest word in the string.
+
+<14>Filter Array:
+Write a function filterArray(arr, callback) that takes an array and a callback function as arguments. The callback function should return true or false for each element. The filterArray function should return a new array containing only the elements for which the callback function returned true.
+
+<15>Closure Example:
+Write a function createCounter() that returns another function. The inner function should increment a counter variable each time it's called and return the current count.
