@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>RANDOM NUMBER GENERATOR</h1>
+    </nav>
+    <main>
+        <label for="lenght">What Digits Of Number You Want To Produce? = </label>
+        <input type="number" class="lengths" placeholder="digits = 10 , 100, 1000, 10000, ...., 10000000000000000 ">
+        <div class="generated">GENERATED NUMBER IS :- </div>
+        <button class="generator" onclick="generation()">GENERATE</button>
+
+        <script>
+            let generatedNumber = document.querySelector('.generated');
+            let generatorButton = document.querySelector('.generator');
+            function generation() {
+                let lengthsOfNum = parseInt(document.querySelector('.lengths').value);
+                console.log(lengthsOfNum);
+                let numberOrigin =Math.ceil(Math.random() * lengthsOfNum);
+                generatedNumber.textContent = `GENRATED NUMBER IS :- ${numberOrigin}`
+            }
+        </script>
+    </main>
+</body>
+</html>
