@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            color: crimson;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            font-family: 'Georgia', serif;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            margin-top: 25px;
+            font-size: 1.4rem;
+            color: #222;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>TEMPERATURE CONVERTER</h1>
+    </nav>
+
+    <main>
+        <p class="description">Convert temperature between Celsius and Fahrenheit.</p>
+
+        <label for="tempInput">Enter Temperature:</label>
+        <input type="number" id="tempInput" placeholder="e.g., 100" />
+
+        <label for="conversionType">Convert to:</label>
+        <select id="conversionType">
+            <option value="toF">Fahrenheit</option>
+            <option value="toC">Celsius</option>
+        </select>
+
+        <button onclick="convertTemp()">Convert</button>
+
+        <div class="result" id="tempResult"></div>
+    </main>
+
+    <script>
+        function convertTemp() {
+            const temp = parseFloat(document.getElementById("tempInput").value);
+            const type = document.getElementById("conversionType").value;
+            const resultDiv = document.getElementById("tempResult");
+
+            if (isNaN(temp)) {
+                resultDiv.innerText = "Please enter a valid number.";
+                return;
+            }
+
+            let converted = 0;
+            if (type === "toF") {
+                converted = (temp * 9/5) + 32;
+                resultDiv.innerText = `${temp}°C = ${converted.toFixed(2)}°F`;
+            } else {
+                converted = (temp - 32) * 5/9;
+                resultDiv.innerText = `${temp}°F = ${converted.toFixed(2)}°C`;
+            }
+        }
+    </script>
+</body>
+</html>
