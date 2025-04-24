@@ -5,12 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url('/function_problems/EASY_problems/assests/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    nav{
+        width: 100vw;
+        height: 70px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ffffffa1;
+        background-color: #8733e675;
+        backdrop-filter: blur(3px);
+        box-shadow: 0 0 8px #ffacff;
+    }
+    nav h1{
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        color: crimson;
+        cursor: none;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 70vw;
+        height: 70vh;
+        border: 1px solid #ffffff7e;
+        border-radius: 18px;
+        background-color: #8733e675;
+        backdrop-filter: blur(3px);
+        box-shadow: 0 0 20px #ffacff;
+
+    }
+    main label{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    main input{
+        width: 200px;
+        height: 70px;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        color:#5f5f5f;
+        border-radius: 18px;
+        border: none;
+        padding: 5px;
+
+    }
+
+    .generated{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+    }
+
+    button{
+        width: 150px;
+        height: 70px;
+        border: 1px solid rgba(255, 255, 255, 0.39);
+        border-radius: 999px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        background-color: crimson;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    button:hover{
+        color: crimson;
+        text-shadow: 0 0 10px white;
+        background-color: #a58ee4c7;
+        box-shadow: 0 0 40px crimson;
+    }
+
+
+</style>
 <body>
     <nav>
         <h1>RANDOM NUMBER GENERATOR</h1>
     </nav>
     <main>
-        <label for="lenght">What Digits Of Number You Want To Produce? = </label>
+        <label for="lenght">What Digits Of Number You Want To Produce?</label>
         <input type="number" class="lengths" placeholder="digits = 10 , 100, 1000, 10000, ...., 10000000000000000 ">
         <div class="generated">GENERATED NUMBER IS :- </div>
         <button class="generator" onclick="generation()">GENERATE</button>
