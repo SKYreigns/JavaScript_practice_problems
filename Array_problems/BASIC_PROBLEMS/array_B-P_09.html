@@ -1,11 +1,11 @@
-<!-- <7> How do you add a new element to the end of an array named myArray? -->
+<!-- <9> How do you add a new element to the beginning of an array named myArray? -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add New Element At The End Of Array</title>
+    <title>Add New Element At The Beginning Of Array</title>
   </head>
 
   <style>
@@ -25,26 +25,23 @@
       padding: 10px;
     }
   </style>
-
-  
   <body>
-    <h1>Add New Element To The End Of Array</h1>
+    <h1>Adding New Element To The Beginning of Array</h1>
 
     <p>
-      We can add any element to the end of array by using a property "push".
-      Push :adds new element to an already exisitng array at the very last.
+      To add a new element at the beigninning of array , we should use a
+      property "unshift".
     </p>
-
-    <p>Here's how you can do it.</p>
+    <p>Here's how.</p>
 
     <h5>
-      let myArray = ["n","e"];<br />
-      myArray.push("w");
+      let myArray = ["e","w"];<br />
+      myArray.unshift("n");
     </h5>
 
     <script>
-      let myArray = ["n", "e"];
-      myArray.push("w");
+      let myArray = ["e", "w"];
+      myArray.unshift("n");
       console.log(myArray);
     </script>
   </body>

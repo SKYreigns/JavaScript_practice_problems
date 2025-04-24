@@ -1,0 +1,62 @@
+<!-- <12> How do you iterate over each element in an array named myArray using a for...of loop? -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FOR...OF Loop</title>
+    </head>
+
+    <style>
+        body{
+            background-color: #212121;
+        }
+      h1 {
+        color: crimson;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+      }
+  
+      h5 {
+        color: white;
+        background-color: #6398fa;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .highlight{
+        color: crimson;
+        text-decoration: underline;
+        font-size: 18px;
+        font: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    </style>
+    <body>
+        <h1>FOR...OF loop</h1>
+
+        <h5>
+            let myArray = ["N","A","M","E"];<br />
+            for (let char of myArray);
+            console.log(char);
+        </h5>
+
+        <p class="hightlight">INSIGHT:</p>
+        <p>What's happening here is , we are defining value every index as "char" of myArray. The 'FOR' then will try to iterate all the char. and console.log it one by one.</p>
+
+
+        <script>
+            
+
+            let myArray2 = ["N","A","M","E"];
+            for(let char of myArray2){
+              console.log(char);
+            }
+        </script>
+    </body>
+    </html>
