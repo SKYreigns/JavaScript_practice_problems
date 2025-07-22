@@ -1,0 +1,68 @@
+<!-- <19> How do you create a new array that contains a portion of an existing array (e.g., elements from index 1 to 3 of originalArray)? -->
+        <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>array_B-P_18</title>
+        </head>
+        
+        <style>
+        body{
+            background-color: #212121;
+        }
+      h1 {
+        color: crimson;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+      }
+  
+      h5 {
+        color: white;
+        background-color: #6398fa;
+        text-align: center;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .highlight{
+        color: crimson;
+        text-decoration: underline;
+        font-size: 18px;
+        font: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .result{
+          color: crimson;
+          font-size: 22px;
+          font-weight: 800;
+        }
+            
+        </style>
+<body>
+    <h1>Taking out a certain part of an array.</h1>
+     <h5>
+        let MyArray = ["N","A","M","E","S"];<br>
+        let ModifiedArray = MyArray.slice(1,4);<br>
+        console.log(ModifiedArray);<br>
+        <p class="result">RESULT :- ['A','M','E']</p>
+    </h5>
+
+
+    
+
+        <p class="hightlight">INSIGHT:</p>
+        <p>To extract out a portion of an array we use an array property called slice , whice slice out the part of array within the given range.</p>
+<script>
+        let MyArray = ["N","A","M","E","S"];
+        let arrayHas = MyArray.slice(1,4);
+        console.log(arrayHas);
+        </script>
+    </body>
+    </html>
