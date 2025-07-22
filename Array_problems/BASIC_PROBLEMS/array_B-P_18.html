@@ -1,0 +1,70 @@
+<!-- <18> How do you check if an array named numbers includes the value 5? -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>array_B-P_18</title>
+        </head>
+        
+        <style>
+        body{
+            background-color: #212121;
+        }
+      h1 {
+        color: crimson;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+      }
+  
+      h5 {
+        color: white;
+        background-color: #6398fa;
+        text-align: center;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .highlight{
+        color: crimson;
+        text-decoration: underline;
+        font-size: 18px;
+        font: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .result{
+          color: crimson;
+          font-size: 22px;
+          font-weight: 800;
+        }
+            
+        </style>
+<body>
+    <h1>Checking if a particular element exist in Array.</h1>
+     <h5>
+        let MyArray = ["N","A","M","E"];<br>
+        let arrayHas = MyArray.includes("M");<br>
+        console.log(arrayHas);<br>
+        <p class="result">RESULT :- True</p>
+    </h5>
+
+
+    
+
+        <p class="hightlight">INSIGHT:</p>
+        <p>To know if certain element exist in an array or not we use a property of an array that is 'Includes()'. What this property do is go through all the elements of the array one by one and when it finds the perfect match "===" through comparison it stops and return 'true' else 'false'.</p>
+<script>
+        let MyArray = ["N","A","M","E"];
+        let arrayHas = MyArray.includes("M");
+        console.log(arrayHas);
+        </script>
+    </body>
+    </html>
