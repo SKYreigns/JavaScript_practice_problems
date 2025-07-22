@@ -36,26 +36,41 @@
         font: 800;
         font-family: Georgia, 'Times New Roman', Times, serif;
       }
+
+      .resultConsole{
+        width: 40vw;
+        height: 250px;
+        background-color: #6398fa;
+        color: #ffffff;
+      }
     </style>
     <body>
         <h1>FOR...OF loop</h1>
 
         <h5>
-            let myArray = ["N","A","M","E"];<br />
+            let myArray = ["N","A","M","E","S"];<br />
             for (let char of myArray);
             console.log(char);
         </h5>
 
         <p class="hightlight">INSIGHT:</p>
         <p>What's happening here is , we are defining value every index as "char" of myArray. The 'FOR' then will try to iterate all the char. and console.log it one by one.</p>
+        <div class="resultConsole"></div>
 
 
         <script>
-            
-
-            let myArray2 = ["N","A","M","E"];
+            let print = document.querySelector('.resultConsole');
+            let outPut = document.querySelector('.outputBtn');
+            let myArray2 = ["N","A","M","E","S"];
+            let arrayLength = myArray2.length;
             for(let char of myArray2){
-              console.log(char);
+                let creatingDiv = document.createElement('div');
+                creatingDiv.style.backgroundColor = 'crimson';
+                creatingDiv.style.width = '20px';
+                creatingDiv.style.height = '20px';
+                creatingDiv.style.margin = '10px';
+                print.appendChild(creatingDiv);
+                creatingDiv.innerText = char;
             }
         </script>
     </body>
