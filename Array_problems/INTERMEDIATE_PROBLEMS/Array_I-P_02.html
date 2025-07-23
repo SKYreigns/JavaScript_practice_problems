@@ -1,0 +1,29 @@
+<!-- <Problem_2: Filter Strings by Length
+<Task: Given an array of strings, create a new array containing only those strings that have a length greater than 5 characters. The original array should remain unchanged.
+<Example_Input: ['apple', 'banana', 'kiwi', 'grapefruit', 'orange']
+<Expected_Output: ['banana', 'grapefruit', 'orange']> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayI-P_02</title>
+</head>
+<body>
+    <div>Filtering by words length.</div>
+
+    <script>
+        let fruits = ['apple', 'banana', 'kiwi', 'grapefruit', 'orange'];
+        let goodFruits = fruits.filter(function measuringLength(fruit){
+            if (fruit.length > 5) {
+                return fruit;
+            }
+        })
+
+        console.log(goodFruits)
+    </script>
+    
+</body>
+</html>
