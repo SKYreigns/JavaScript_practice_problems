@@ -155,7 +155,7 @@ Then, from that temporary array, create a final new array containing only those 
 <Example_Input: ['apple', 'banana', 'apple', 'orange', 'banana', 'apple', 'kiwi']
 <Expected_Output: { apple: 3, banana: 2, orange: 1, kiwi: 1 }>
 
-<Problem 20: Remove Duplicate Values
+<Problem_20: Remove Duplicate Values
 <Task: Given an array that may contain duplicate values, create a new array that contains only the unique values from the original array. The order of the unique values in the new array should be preserved as they first appeared in the original array.
 <Example_Input: [1, 2, 2, 3, 4, 1, 5, 3]
 <Expected_Output: [1, 2, 3, 4, 5]>
@@ -164,55 +164,46 @@ Then, from that temporary array, create a final new array containing only those 
 
 <---------------------------------------<ADVANCED_QUESTIONS>--------------------------------------->
 
-Problem 1: Deep Flatten a Nested Array
-Task: Given a multi-dimensional array (an array that can contain other arrays nested to any depth), create a new, completely flat array containing all elements. The original array must remain unchanged.
+<Problem_1: Deep Flatten a Nested Array
+<Task: Given a multi-dimensional array (an array that can contain other arrays nested to any depth), create a new, completely flat array containing all elements. The original array must remain unchanged.
+<Example_Input: [1, [2, [3, 4]], 5, [6, [7, [8]]]]
+<Expected_Output: [1, 2, 3, 4, 5, 6, 7, 8]>
 
-Example Input: [1, [2, [3, 4]], 5, [6, [7, [8]]]]
 
-Expected Output: [1, 2, 3, 4, 5, 6, 7, 8]
 
-Problem 2: Sort Array of Objects by Multiple Criteria
-
-Task: Given an array of user objects, where each object has name (string) and age (number) properties, sort the array first by age in ascending order. If two users have the same age, then sort them by name alphabetically in ascending order. The original array should be modified.
-
-Example Input:
-
+<Problem_2: Sort Array of Objects by Multiple Criteria
+<Task: Given an array of user objects, where each object has name (string) and age (number) properties, sort the array first by age in ascending order. If two users have the same age, then sort them by name alphabetically in ascending order. The original array should be modified.
+<Example_Input:
 JavaScript
-
 [
   { name: 'Charlie', age: 30 },
   { name: 'Alice', age: 25 },
   { name: 'Bob', age: 30 },
   { name: 'David', age: 25 }
 ]
-Expected Output (Modified Array):
-
+<Expected_Output (Modified Array):
 JavaScript
-
 [
   { name: 'Alice', age: 25 },
   { name: 'David', age: 25 },
   { name: 'Bob', age: 30 },
   { name: 'Charlie', age: 30 }
-]
-Problem 3: Group Objects by a Specific Property
+]>
 
-Task: Given an array of product objects, where each object has name (string), category (string), and price (number) properties, return a new object. This new object should have keys representing each unique category, and the values should be arrays containing all the products belonging to that category.
 
-Example Input:
 
+<Problem 3: Group Objects by a Specific Property
+<Task: Given an array of product objects, where each object has name (string), category (string), and price (number) properties, return a new object. This new object should have keys representing each unique category, and the values should be arrays containing all the products belonging to that category.
+<Example_Input:
 JavaScript
-
 [
   { name: 'Laptop', category: 'Electronics', price: 1200 },
   { name: 'T-Shirt', category: 'Apparel', price: 25 },
   { name: 'Keyboard', category: 'Electronics', price: 75 },
   { name: 'Jeans', category: 'Apparel', price: 60 }
 ]
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 {
   Electronics: [
     { name: 'Laptop', category: 'Electronics', price: 1200 },
@@ -222,15 +213,14 @@ JavaScript
     { name: 'T-Shirt', category: 'Apparel', price: 25 },
     { name: 'Jeans', category: 'Apparel', price: 60 }
   ]
-}
-Problem 4: Find Unique Objects Based on a Property
+}>
 
-Task: Given an array of objects where some objects might have duplicate values for a specific property (e.g., id), create a new array containing only the objects that are unique based on that property. If duplicates exist, keep the first occurrence.
 
-Example Input:
 
+<Problem_4: Find Unique Objects Based on a Property
+<Task: Given an array of objects where some objects might have duplicate values for a specific property (e.g., id), create a new array containing only the objects that are unique based on that property. If duplicates exist, keep the first occurrence.
+<Example_Input:
 JavaScript
-
 [
   { id: 1, name: 'Alice' },
   { id: 2, name: 'Bob' },
@@ -238,47 +228,47 @@ JavaScript
   { id: 3, name: 'Charlie' },
   { id: 2, name: 'Bobby' }   // Duplicate ID
 ]
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 [
   { id: 1, name: 'Alice' },
   { id: 2, name: 'Bob' },
   { id: 3, name: 'Charlie' }
-]
-Problem 5: Array Intersection
+]>
 
-Task: Given two arrays of primitive values (e.g., numbers or strings), create a new array containing only the elements that are present in both arrays. The order of elements in the new array does not strictly matter.
 
-Example Input: array1 = [1, 2, 3, 4, 5], array2 = [3, 5, 6, 7]
 
-Expected Output: [3, 5] (or [5, 3])
 
-Problem 6: Array Difference (Elements in A but not in B)
+<Problem_5: Array Intersection
+<Task: Given two arrays of primitive values (e.g., numbers or strings), create a new array containing only the elements that are present in both arrays. The order of elements in the new array does not strictly matter.
+<Example_Input: array1 = [1, 2, 3, 4, 5], array2 = [3, 5, 6, 7]
+<Expected_Output: [3, 5] (or [5, 3])>
 
-Task: Given two arrays of primitive values, create a new array containing only the elements that are present in the first array (array1) but not in the second array (array2).
 
-Example Input: array1 = [1, 2, 3, 4, 5], array2 = [3, 5, 6, 7]
 
-Expected Output: [1, 2, 4]
 
-Problem 7: Partition Array Based on a Condition
+<Problem_6: Array Difference (Elements in A but not in B)
+<Task: Given two arrays of primitive values, create a new array containing only the elements that are present in the first array (array1) but not in the second array (array2).
+<Example_Input: array1 = [1, 2, 3, 4, 5], array2 = [3, 5, 6, 7]
+<Expected_Output: [1, 2, 4]>
 
-Task: Given an array of numbers and a callback function (e.g., isEven = num => num % 2 === 0), return a new array containing two sub-arrays. The first sub-array should contain all elements for which the callback returns true, and the second sub-array should contain all elements for which the callback returns false.
 
-Example Input: numbers = [1, 2, 3, 4, 5], callback = (num) => num % 2 === 0
 
-Expected Output: [[2, 4], [1, 3, 5]]
 
-Problem 8: Calculate Average Price Per Category
 
-Task: Building on Problem 3's output (an object grouped by category), calculate the average price for products in each category. Return a new object where keys are categories and values are their average prices.
+<Problem_7: Partition Array Based on a Condition
+<Task: Given an array of numbers and a callback function (e.g., isEven = num => num % 2 === 0), return a new array containing two sub-arrays. The first sub-array should contain all elements for which the callback returns true, and the second sub-array should contain all elements for which the callback returns false.
+<Example_Input: numbers = [1, 2, 3, 4, 5], callback = (num) => num % 2 === 0
+<Expected_Output: [[2, 4], [1, 3, 5]]>
 
-Example Input (from P3 output):
 
+
+
+
+<Problem_8: Calculate Average Price Per Category
+<Task: Building on Problem 3's output (an object grouped by category), calculate the average price for products in each category. Return a new object where keys are categories and values are their average prices.
+<Example_Input (from P3 output):
 JavaScript
-
 {
   Electronics: [
     { name: 'Laptop', category: 'Electronics', price: 1200 },
@@ -289,186 +279,178 @@ JavaScript
     { name: 'Jeans', category: 'Apparel', price: 60 }
   ]
 }
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 {
   Electronics: 637.5, // (1200 + 75) / 2
   Apparel: 42.5      // (25 + 60) / 2
-}
-Problem 9: Chained Transformation and Aggregation
+}>
 
-Task: Given an array of orders, where each order has items (an array of {productId: string, quantity: number, price: number}), status (string), and total (number), find the total revenue from 'completed' orders where the total is greater than 100.
 
-Example Input:
 
+
+<Problem 9: Chained Transformation and Aggregation
+<Task: Given an array of orders, where each order has items (an array of {productId: string, quantity: number, price: number}), status (string), and total (number), find the total revenue from 'completed' orders where the total is greater than 100.
+<Example_Input:
 JavaScript
-
 [
   { items: [], status: 'pending', total: 50 },
   { items: [], status: 'completed', total: 120 },
   { items: [], status: 'completed', total: 80 },
   { items: [], status: 'completed', total: 200 }
 ]
-Expected Output: 320 (120 + 200)
+<Expected_Output: 320 (120 + 200)>
 
-Problem 10: Transpose a 2D Array (Matrix)
 
-Task: Given a 2D array (matrix) representing rows and columns, return a new 2D array where rows become columns and columns become rows. Assume the input matrix is rectangular (not jagged).
 
-Example Input:
 
+
+<Problem_10: Transpose a 2D Array (Matrix)
+<Task: Given a 2D array (matrix) representing rows and columns, return a new 2D array where rows become columns and columns become rows. Assume the input matrix is rectangular (not jagged).
+<Example_Input:
 JavaScript
-
 [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9]
 ]
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 [
   [1, 4, 7],
   [2, 5, 8],
   [3, 6, 9]
-]
-Problem 11: Check if One Array is a Subset of Another
+]>
 
-Task: Given two arrays, arrayA and arrayB, determine if arrayA is a subset of arrayB. This means all elements in arrayA must also be present in arrayB. Return true or false.
 
-Example Input: arrayA = [1, 3], arrayB = [1, 2, 3, 4]
 
-Expected Output: true
 
-Problem 12: Calculate Sliding Window Sums
+<Problem_11: Check if One Array is a Subset of Another
+<Task: Given two arrays, arrayA and arrayB, determine if arrayA is a subset of arrayB. This means all elements in arrayA must also be present in arrayB. Return true or false.
+<Example_Input: arrayA = [1, 3], arrayB = [1, 2, 3, 4]
+<Expected_Output: true>
 
-Task: Given an array of numbers and a windowSize (integer), calculate the sum of numbers for every "sliding window" of that size. Return a new array containing these sums.
 
-Example Input: numbers = [1, 2, 3, 4, 5, 6], windowSize = 3
 
-Expected Output: [6, 9, 12, 15]
 
+
+<Problem_12: Calculate Sliding Window Sums
+<Task: Given an array of numbers and a windowSize (integer), calculate the sum of numbers for every "sliding window" of that size. Return a new array containing these sums.
+<Example_Input: numbers = [1, 2, 3, 4, 5, 6], windowSize = 3
+<Expected_Output: [6, 9, 12, 15]
 (1+2+3 = 6)
-
 (2+3+4 = 9)
-
 (3+4+5 = 12)
+(4+5+6 = 15)>
 
-(4+5+6 = 15)
 
-Problem 13: Transform Array to Object Based on Property
 
-Task: Given an array of objects, where each object has a unique key property, transform this array into a single object. The key property of each original object should become the key in the new object, and the entire original object should be its value.
 
-Example Input:
 
+<Problem_13: Transform Array to Object Based on Property
+<Task: Given an array of objects, where each object has a unique key property, transform this array into a single object. The key property of each original object should become the key in the new object, and the entire original object should be its value.
+<Example_Input:
 JavaScript
-
 [
   { id: 'a1', value: 10 },
   { id: 'b2', value: 20 },
   { id: 'c3', value: 30 }
 ]
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 {
   a1: { id: 'a1', value: 10 },
   b2: { id: 'b2', value: 20 },
   c3: { id: 'c3', value: 30 }
-}
-Problem 14: Implement myMap (Custom Map Function)
+}>
 
-Task: Write a function called myMap that takes two arguments: an array and a callback function. myMap should behave exactly like the built-in Array.prototype.map(). It should iterate over the array, apply the callback function to each element, and return a new array with the results. Do not use the built-in map method within your myMap function.
 
-Example Usage:
 
+<Problem_14: Implement myMap (Custom Map Function)
+<Task: Write a function called myMap that takes two arguments: an array and a callback function. myMap should behave exactly like the built-in Array.prototype.map(). It should iterate over the array, apply the callback function to each element, and return a new array with the results. Do not use the built-in map method within your myMap function.
+<Example Usage:
 JavaScript
-
 const numbers = [1, 2, 3];
 const doubled = myMap(numbers, num => num * 2);
-console.log(doubled); // Should output [2, 4, 6]
-Problem 15: Implement myFilter (Custom Filter Function)
+<console.log(doubled); // Should output [2, 4, 6]>
 
-Task: Write a function called myFilter that takes two arguments: an array and a callback function (a test function). myFilter should behave exactly like the built-in Array.prototype.filter(). It should iterate over the array, apply the callback function to each element, and return a new array containing only the elements for which the callback returns true. Do not use the built-in filter method within your myFilter function.
 
-Example Usage:
 
+<Problem_15: Implement myFilter (Custom Filter Function)
+<Task: Write a function called myFilter that takes two arguments: an array and a callback function (a test function). myFilter should behave exactly like the built-in Array.prototype.filter(). It should iterate over the array, apply the callback function to each element, and return a new array containing only the elements for which the callback returns true. Do not use the built-in filter method within your myFilter function.
+<Example Usage:
 JavaScript
-
 const numbers = [1, 2, 3, 4, 5];
 const evens = myFilter(numbers, num => num % 2 === 0);
-console.log(evens); // Should output [2, 4]
-Problem 16: Implement myReduce (Custom Reduce Function)
+<console.log(evens); // Should output [2, 4]>
 
-Task: Write a function called myReduce that takes three arguments: an array, a callback function, and an optional initialValue. myReduce should behave exactly like the built-in Array.prototype.reduce(). It should apply the callback function against an accumulator and each element (from left to right) to reduce it to a single value. Do not use the built-in reduce method within your myReduce function.
 
-Example Usage:
 
+<Problem16: Implement myReduce (Custom Reduce Function)
+<Task: Write a function called myReduce that takes three arguments: an array, a callback function, and an optional initialValue. myReduce should behave exactly like the built-in Array.prototype.reduce(). It should apply the callback function against an accumulator and each element (from left to right) to reduce it to a single value. Do not use the built-in reduce method within your myReduce function.
+<Example Usage:
 JavaScript
-
 const numbers = [1, 2, 3, 4];
 const sum = myReduce(numbers, (acc, num) => acc + num, 0);
-console.log(sum); // Should output 10
-Problem 17: Rotate Array by N Positions
+<console.log(sum); // Should output 10>
 
-Task: Given an array and an integer n, rotate the array's elements to the right by n positions. The rotation should happen in place, meaning the original array should be modified. Elements moved off one end should reappear at the other.
 
-Example Input: arr = [1, 2, 3, 4, 5], n = 2
 
-Expected Output (Modified Array): [4, 5, 1, 2, 3]
 
-Problem 18: Find the Longest String (handling edge cases)
+<Problem_17: Rotate Array by N Positions
+<Task: Given an array and an integer n, rotate the array's elements to the right by n positions. The rotation should happen in place, meaning the original array should be modified. Elements moved off one end should reappear at the other.
+<Example_Input: arr = [1, 2, 3, 4, 5], n = 2
+<Expected_Output (Modified Array): [4, 5, 1, 2, 3]>
 
-Task: Given an array of strings (which might include empty strings, null, or undefined values), find and return the longest valid string. If multiple strings have the same maximum length, return the one that appears first. Invalid string types (non-strings, null, undefined) should be ignored.
 
-Example Input: ['apple', 'banana', null, 'kiwi', 'grapefruit', '', undefined]
 
-Expected Output: 'grapefruit'
 
-Problem 19: Deep Clone an Array of Simple Objects
+<Problem_18: Find the Longest String (handling edge cases)
+<Task: Given an array of strings (which might include empty strings, null, or undefined values), find and return the longest valid string. If multiple strings have the same maximum length, return the one that appears first. Invalid string types (non-strings, null, undefined) should be ignored.
+<Example_Input: ['apple', 'banana', null, 'kiwi', 'grapefruit', '', undefined]
+<Expected_Output: 'grapefruit'>
 
-Task: Given an array that contains primitive values and/or simple JavaScript objects (objects that don't have circular references or complex types like functions, Dates, etc.), create a completely independent deep copy of this array. Changes to the copied array or its nested objects should not affect the original array.
 
-Example Input:
 
+
+<Problem_19: Deep Clone an Array of Simple Objects
+<Task: Given an array that contains primitive values and/or simple JavaScript objects (objects that don't have circular references or complex types like functions, Dates, etc.), create a completely independent deep copy of this array. Changes to the copied array or its nested objects should not affect the original array.
+<Example_Input:
 JavaScript
-
 const original = [{a: 1, b: {c: 2}}, 3, {d: 4}];
-Expected Output (a new array):
-
+<Expected_Output (a new array):
 JavaScript
+const cloned = [{a: 1, b: {c: 2}}, 3, {d: 4}];>
 
-const cloned = [{a: 1, b: {c: 2}}, 3, {d: 4}];
-Problem 20: Basic Run-Length Encoding
 
-Task: Given an array of elements, implement a basic run-length encoding. Return a new array where consecutive identical elements are represented as a sub-array containing the element and its count.
 
-Example Input: ['a', 'a', 'a', 'b', 'b', 'c', 'a', 'a']
 
-Expected Output: [['a', 3], ['b', 2], ['c', 1], ['a', 2]]
+<Problem_20: Basic Run-Length Encoding
+<Task: Given an array of elements, implement a basic run-length encoding. Return a new array where consecutive identical elements are represented as a sub-array containing the element and its count.
+<Example_Input: ['a', 'a', 'a', 'b', 'b', 'c', 'a', 'a']
+<Expected_Output: [['a', 3], ['b', 2], ['c', 1], ['a', 2]]>
 
-Expert Level JavaScript Array Challenges
-Problem 1: Find the Most Frequent Element
 
-Task: Given an array of elements (which can be numbers or strings), find and return the element that appears most frequently in the array. If there's a tie for the most frequent element, return the one that appears first in the original array.
 
-Example Input: ['a', 'b', 'a', 'c', 'b', 'a', 'd', 'b']
 
-Expected Output: 'a'
 
-Problem 2: Unique Objects with Counts (Extended)
+<----------------------------- <EXPERT_CHALLENGES> ----------------------------->
 
-Task: Given an array of objects (each with an id and other properties), return a new array of objects. Each object in the new array should represent a unique id from the original array and include a count property indicating how many times that id appeared. The order of unique objects in the new array should reflect their first appearance in the original array.
 
-Example Input:
 
+<Problem_1: Find the Most Frequent Element
+<Task: Given an array of elements (which can be numbers or strings), find and return the element that appears most frequently in the array. If there's a tie for the most frequent element, return the one that appears first in the original array.
+<Example_Input: ['a', 'b', 'a', 'c', 'b', 'a', 'd', 'b']
+<Expected_Output: 'a'>
+
+
+
+
+
+<Problem_2: Unique Objects with Counts (Extended)
+<Task: Given an array of objects (each with an id and other properties), return a new array of objects. Each object in the new array should represent a unique id from the original array and include a count property indicating how many times that id appeared. The order of unique objects in the new array should reflect their first appearance in the original array.
+<Example_Input:
 JavaScript
-
 [
   { id: 'A', value: 10 },
   { id: 'B', value: 20 },
@@ -476,82 +458,86 @@ JavaScript
   { id: 'C', value: 40 },
   { id: 'B', value: 50 }
 ]
-Expected Output:
-
+<Expected_Output:
 JavaScript
-
 [
   { id: 'A', count: 2 },
   { id: 'B', count: 2 },
   { id: 'C', count: 1 }
-]
-Problem 3: Find the Missing Number in a Sequence
+]>
 
-Task: Given an array nums containing n distinct numbers taken from the range 0, 1, 2, ..., n, find and return the one number in the range that is missing from the array.
 
-Example Input: [3, 0, 1] (Here n=3, so numbers are from 0 to 3)
 
-Expected Output: 2
 
-Problem 4: Rotate Array In-Place with O(1) Extra Space
+<Problem_3: Find the Missing Number in a Sequence
+<Task: Given an array nums containing n distinct numbers taken from the range 0, 1, 2, ..., n, find and return the one number in the range that is missing from the array.
+<Example_Input: [3, 0, 1] (Here n=3, so numbers are from 0 to 3)
+<Expected_Output: 2>
 
-Task: Given an array arr and an integer k (non-negative), rotate the array's elements to the right by k positions. The rotation must be performed in-place, meaning the original array should be modified directly, and you should aim for O(1) extra space complexity (i.e., don't create a new array of the same size).
 
-Example Input: arr = [1, 2, 3, 4, 5, 6, 7], k = 3
 
-Expected Output (Modified Array): [5, 6, 7, 1, 2, 3, 4]
 
-Problem 5: Deep Compare Two Arrays or Objects
 
-Task: Write a function deepEqual(item1, item2) that returns true if two inputs (which can be primitive values, arrays, or plain objects) are deeply equal. This means their values are the same, and if they are objects or arrays, their contents are also deeply equal recursively. Consider that arrays might contain objects, and objects might contain arrays.
+<Problem_4: Rotate Array In-Place with O(1) Extra Space
+<Task: Given an array arr and an integer k (non-negative), rotate the array's elements to the right by k positions. The rotation must be performed in-place, meaning the original array should be modified directly, and you should aim for O(1) extra space complexity (i.e., don't create a new array of the same size).
+<Example_Input: arr = [1, 2, 3, 4, 5, 6, 7], k = 3
+<Expected_Output (Modified Array): [5, 6, 7, 1, 2, 3, 4]>
 
-Example Input:
 
+
+
+
+<Problem_5: Deep Compare Two Arrays or Objects
+<Task: Write a function deepEqual(item1, item2) that returns true if two inputs (which can be primitive values, arrays, or plain objects) are deeply equal. This means their values are the same, and if they are objects or arrays, their contents are also deeply equal recursively. Consider that arrays might contain objects, and objects might contain arrays.
+<Example_Input:
 JavaScript
-
 const arr1 = [1, {a: 2, b: [3, 4]}, 5];
 const arr2 = [1, {a: 2, b: [3, 4]}, 5];
-deepEqual(arr1, arr2); // true
-Problem 6: Implement chunk (Split Array into Fixed-Size Chunks)
+<deepEqual(arr1, arr2); // true>
 
-Task: Write a function chunk(array, size) that takes an array and a size (integer). It should return a new array of arrays, where each inner array (chunk) has at most size elements. The last chunk might have fewer than size elements if the original array's length is not a multiple of size.
 
-Example Input: array = [1, 2, 3, 4, 5, 6, 7], size = 3
 
-Expected Output: [[1, 2, 3], [4, 5, 6], [7]]
 
-Problem 7: Implement zip (Combine Arrays Element-wise)
+<Problem_6: Implement chunk (Split Array into Fixed-Size Chunks)
+<Task: Write a function chunk(array, size) that takes an array and a size (integer). It should return a new array of arrays, where each inner array (chunk) has at most size elements. The last chunk might have fewer than size elements if the original array's length is not a multiple of size.
+<Example_Input: array = [1, 2, 3, 4, 5, 6, 7], size = 3
+<Expected_Output: [[1, 2, 3], [4, 5, 6], [7]]>
 
-Task: Write a function zip(...arrays) that takes multiple arrays as arguments. It should return a new array of arrays, where each inner array contains the elements from the corresponding positions of the input arrays. If input arrays have different lengths, stop at the length of the shortest array.
 
-Example Input: zip([1, 2, 3], ['a', 'b', 'c'], [true, false, true])
 
-Expected Output: [[1, 'a', true], [2, 'b', false], [3, 'c', true]]
 
-Problem 8: Calculate Running Totals (Prefix Sums)
 
-Task: Given an array of numbers, return a new array where each element is the cumulative sum of all preceding elements including itself.
+<Problem_7: Implement zip (Combine Arrays Element-wise)
+<Task: Write a function zip(...arrays) that takes multiple arrays as arguments. It should return a new array of arrays, where each inner array contains the elements from the corresponding positions of the input arrays. If input arrays have different lengths, stop at the length of the shortest array.
+<Example_Input: zip([1, 2, 3], ['a', 'b', 'c'], [true, false, true])
+<Expected_Output: [[1, 'a', true], [2, 'b', false], [3, 'c', true]]>
 
-Example Input: [1, 2, 3, 4, 5]
 
-Expected Output: [1, 3, 6, 10, 15]
 
-Problem 9: Find All Pairs that Sum to a Target
 
-Task: Given an array of numbers and a targetSum, find and return all unique pairs of numbers (as arrays of two numbers) from the input array that add up to the targetSum. Each number in the input array can be used in at most one pair.
 
-Example Input: numbers = [1, 5, 2, 8, 3, 7], targetSum = 10
 
-Expected Output (order of pairs/elements within pairs doesn't strictly matter): [[2, 8], [3, 7]]
+<Problem_8: Calculate Running Totals (Prefix Sums)
+<Task: Given an array of numbers, return a new array where each element is the cumulative sum of all preceding elements including itself.
+<Example_Input: [1, 2, 3, 4, 5]
+<Expected_Output: [1, 3, 6, 10, 15]>
 
-Problem 10: Flatten Object Values Recursively
 
-Task: Given an object that can contain nested objects (but no arrays, for simplicity), extract all primitive values (numbers, strings, booleans, null, undefined) into a single flat array.
 
-Example Input:
 
+
+<Problem_9: Find All Pairs that Sum to a Target
+<Task: Given an array of numbers and a targetSum, find and return all unique pairs of numbers (as arrays of two numbers) from the input array that add up to the targetSum. Each number in the input array can be used in at most one pair.
+<Example_Input: numbers = [1, 5, 2, 8, 3, 7], targetSum = 10
+<Expected_Output (order of pairs/elements within pairs doesn't strictly matter): [[2, 8], [3, 7]]>
+
+
+
+
+<Problem_10: Flatten Object Values Recursively
+<Task: Given an object that can contain nested objects (but no arrays, for simplicity), extract all primitive values (numbers, strings, booleans, null, undefined) into a single flat array.
+<Example_Input:
 JavaScript
-
 {
   a: 1,
   b: {
@@ -563,39 +549,37 @@ JavaScript
   },
   g: null
 }
-Expected Output (order doesn't strictly matter): [1, 2, 3, 'hello', null]
+<Expected_Output (order doesn't strictly matter): [1, 2, 3, 'hello', null]>
 
-Problem 11: Generate All Subsets (Power Set)
 
-Task: Given an array of unique elements, generate and return a new array containing all possible subsets (the power set) of the original array. This includes the empty set and the original set itself. The order of subsets in the final array, and the order of elements within each subset, doesn't strictly matter.
 
-Example Input: [1, 2, 3]
 
-Expected Output: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]] (Order may vary)
+<Problem_11: Generate All Subsets (Power Set)
+<Task: Given an array of unique elements, generate and return a new array containing all possible subsets (the power set) of the original array. This includes the empty set and the original set itself. The order of subsets in the final array, and the order of elements within each subset, doesn't strictly matter.
+<Example_Input: [1, 2, 3]
+<Expected_Output: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]] (Order may vary)>
 
-Problem 12: Implement a Pipeline/Compose Function for Arrays
 
-Task: Write a function pipeline(initialArray, functions) that takes an initialArray and an array of functions. Each function in the functions array will take an array as input and return a new array as output. The pipeline function should apply each function in the functions array sequentially to the result of the previous function, starting with the initialArray. Return the final transformed array.
 
-Example Input:
 
+<Problem_12: Implement a Pipeline/Compose Function for Arrays
+<Task: Write a function pipeline(initialArray, functions) that takes an initialArray and an array of functions. Each function in the functions array will take an array as input and return a new array as output. The pipeline function should apply each function in the functions array sequentially to the result of the previous function, starting with the initialArray. Return the final transformed array.
+<Example_Input:
 JavaScript
-
 const initial = [1, 2, 3, 4, 5];
 const double = arr => arr.map(x => x * 2);
 const evens = arr => arr.filter(x => x % 2 === 0);
 const sum = arr => [arr.reduce((acc, x) => acc + x, 0)]; // Make it return an array for pipeline compatibility
 pipeline(initial, [double, evens, sum]);
-Expected Output: [20]
+<Expected_Output: [20]>
 
-Problem 13: Dynamic Multi-Key Sort for Objects (Advanced)
 
-Task: Write a function dynamicSort(array, criteria) that takes an array of objects and an array of criteria objects. Each criteria object has a key (string, the property to sort by) and an order (string: 'asc' for ascending or 'desc' for descending). The function should sort the array based on these criteria, applying them in the order they appear in the criteria array. The original array should be modified.
 
-Example Input:
 
+<Problem_13: Dynamic Multi-Key Sort for Objects (Advanced)
+<Task: Write a function dynamicSort(array, criteria) that takes an array of objects and an array of criteria objects. Each criteria object has a key (string, the property to sort by) and an order (string: 'asc' for ascending or 'desc' for descending). The function should sort the array based on these criteria, applying them in the order they appear in the criteria array. The original array should be modified.
+<Example_Input:
 JavaScript
-
 const users = [
   { name: 'Charlie', age: 30, city: 'NY' },
   { name: 'Alice', age: 25, city: 'LA' },
@@ -608,35 +592,33 @@ const criteria = [
   { key: 'name', order: 'asc' }
 ];
 dynamicSort(users, criteria);
-Expected Output (Modified Array):
-
+<Expected_Output (Modified Array):
 JavaScript
-
 [
   { name: 'Alice', age: 25, city: 'LA' },
   { name: 'David', age: 25, city: 'NY' },
   { name: 'Bob', age: 30, city: 'LA' },
   { name: 'Charlie', age: 30, city: 'NY' }
-]
-Problem 14: Invert Key-Value Pairs of an Array of Objects
+]>
 
-Task: Given an array of simple objects, where each object's keys are strings and its values are primitives (strings or numbers), transform it into a new array where each object's key-value pairs are swapped. Assume values are unique within a single object, so they can safely become keys.
 
-Example Input: [{name: 'Alice', id: 1}, {name: 'Bob', id: 2}]
 
-Expected Output: [{Alice: 'name', 1: 'id'}, {Bob: 'name', 2: 'id'}]
 
-Problem 15: Spiral Matrix Traversal
+<Problem_14: Invert Key-Value Pairs of an Array of Objects
+<Task: Given an array of simple objects, where each object's keys are strings and its values are primitives (strings or numbers), transform it into a new array where each object's key-value pairs are swapped. Assume values are unique within a single object, so they can safely become keys.
+<Example_Input: [{name: 'Alice', id: 1}, {name: 'Bob', id: 2}]
+<Expected_Output: [{Alice: 'name', 1: 'id'}, {Bob: 'name', 2: 'id'}]>
 
-Task: Given a square 2D array (matrix), return all elements of the matrix in spiral order as a single flat array.
 
-Example Input:
 
+
+<Problem_15: Spiral Matrix Traversal
+<Task: Given a square 2D array (matrix), return all elements of the matrix in spiral order as a single flat array.
+<Example_Input:
 JavaScript
-
 [
   [1, 2, 3],
   [8, 9, 4],
   [7, 6, 5]
 ]
-Expected Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+<Expected_Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]>
