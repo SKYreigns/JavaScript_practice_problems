@@ -109,7 +109,7 @@ Then, from that temporary array, create a final new array containing only those 
 <Example_Input: ['apple', 'banana', 'apple', 'orange', 'banana', 'apple', 'kiwi']
 <Expected_Output: { apple: 3, banana: 2, orange: 1, kiwi: 1 }>
 
-<Problem 20: Remove Duplicate Values
+<Problem_20: Remove Duplicate Values
 <Task: Given an array that may contain duplicate values, create a new array that contains only the unique values from the original array. The order of the unique values in the new array should be preserved as they first appeared in the original array.
 <Example_Input: [1, 2, 2, 3, 4, 1, 5, 3]
 <Expected_Output: [1, 2, 3, 4, 5]>
